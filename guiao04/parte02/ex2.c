@@ -43,12 +43,14 @@ void send2Displays(unsigned char value)
 
 int main(void)
 {
+    int freq = 5;
+    float t = (1 / (float)freq) * 1000;
     configureDisplay();
     unsigned int value = 0;
     while (1)
     {
         send2Displays(value);
-        delay(200);
+        delay(t);
         if (value == 0xFF)
         {
             value = 0;
