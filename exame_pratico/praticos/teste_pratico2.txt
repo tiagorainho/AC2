@@ -1,0 +1,4 @@
+1 - LEDs a corresponder à negação do respetivo switch, neste não validar implica 0 valores
+2 - ADC, ler do potenciómetro para os displays, numa escala de 0 a 70 e qualquer coisa, usar um timer para o refresh dos displays (send2displays e isso era dado). Não tenho a certeza do que pediam mas tbm era necessário gerar um sinal PWM e verificar a frequência com o osciloscópio.
+3 - UART, de acordo com o input podia imprimir o valor do switch ou enviar o caracter correspondente à paridade que pediam
+4 - I2C, era dado um programa com erros, corrigir

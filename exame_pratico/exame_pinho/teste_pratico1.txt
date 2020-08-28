@@ -1,0 +1,8 @@
+1 (3 valores) - assembly: LEDs 0-5 acendem na ordem 0,1,...,5,4,...0, durante 0,25s quando o bit 0 do dipswitch está a 0, ou então durante 0,1ms quando o bit 0 está a 1.
+2 (2 valores) - assembly: o mesmo exercício, mas quando pressionada a tecla P a sequência pára e só retoma quando pressionada a tecla I. (usar as syscalls inkey e getChar)
+3 (6 valores) - C: ADC por polling do potenciómetro (5Hz), escala 0 a F, imprimir num display
+4 (6 valores) - C: Igual ao anterior, mas a escala é de 0 a 50 e imprime em ambos os displays
+5 (3 valores) - C: Exercício anterior com interruptions
+
+O que é fornecido em assembly: cabeçalho já preenchido com os .equs de todas as syscalls e valores dos endereços dos portos LAT etc. É preciso escrever o delay (não há ajuda).
+O que é fornecido em C: portos de ADC, função toBCD, o array de conversão de um número para os displays parcialmente (havia um valor por preencher). Escrever o delay e o send2displays.
